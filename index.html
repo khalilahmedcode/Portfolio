@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khalil Ahmed - Sales Executive & Automation Expert</title>
+  <meta name="description" content="Khalil Ahmed - Sales Executive & Automation Expert Portfolio" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- External Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">KHALIL<span>.DEV</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+          🌙
+        </button>
+        <a href="#contact" class="btn-primary nav-cta">Let's Talk</a>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="badge">
+            <span class="dot"></span>
+            Available for Hire
+          </div>
+          <h1>
+            Sales Executive &<br>
+            <span class="gradient-text">Automation Expert</span>
+          </h1>
+          <p>Results-driven individual with a keen interest in marketing, client engagement, and AI automation. Focused on building strong relationships and delivering value-driven solutions through smart systems.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+              View Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn-outline">
+              Contact Me
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Pakistan
+            </div>
+            <div class="stat-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              English
+            </div>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="hero-image-wrapper">
+            <img src="https://i.im.ge/QM7r4eT/WhatsApp_Image_2026-05-02_at_4.51.36_AM.jpg" alt="Khalil Ahmed" class="profile-img" onerror="this.src='https://placehold.co/500x600/1a1a2e/3b82f6?text=Khalil+Ahmed'">
+            <div class="image-overlay"></div>
+            <div class="hero-image-info">
+              <h3>Khalil Ahmed</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">About Me</span>
+          <h2>Who is <span class="gradient-text">Khalil?</span></h2>
+          <p>Passionate about sales, automation, AI systems, lead generation, and business growth.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text" data-aos="fade-right">
+            <h3>Motivated Sales Executive & Tech Enthusiast</h3>
+            <p>Khalil is a motivated sales executive with a strong interest in AI automation, cold calling systems, WhatsApp automation, lead generation, scraping systems, and modern business solutions.</p>
+            <p>Passionate about technology, communication, and helping brands grow digitally. At 19 years old, I bring fresh energy and modern approaches to every project I take on.</p>
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <div class="hc-icon">⚡</div>
+                <h4>Efficiency</h4>
+                <p>Streamlining workflows to save time and reduce manual effort</p>
+              </div>
+              <div class="highlight-card">
+                <div class="hc-icon">📈</div>
+                <h4>Growth</h4>
+                <p>Data-driven strategies to scale your business revenue</p>
+              </div>
+              <div class="highlight-card">
+                <div class="hc-icon">🤝</div>
+                <h4>Relationships</h4>
+                <p>Building strong client relationships for long-term success</p>
+              </div>
+              <div class="highlight-card">
+                <div class="hc-icon">🎯</div>
+                <h4>Results</h4>
+                <p>Focused on delivering measurable outcomes every time</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image-side" data-aos="fade-left">
+            <div class="about-image-card">
+              <div class="about-stats-grid">
+                <div class="stat-card">
+                  <div class="stat-number" data-count="19">0</div>
+                  <div class="stat-label">Years Old</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" data-count="2">0</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" data-count="50">0</div>
+                  <div class="stat-label">Clients Served</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" data-count="10">0</div>
+                  <div class="stat-label">Projects Done</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Experience</span>
+          <h2>Professional <span class="gradient-text">Journey</span></h2>
+          <p>My career path in sales and marketing</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="tc-period">2025 — Present</span>
+              <h3>Sales Executive</h3>
+              <h4>Crystal Web Agency</h4>
+              <ul>
+                <li>Assisted the sales and marketing team in organizing campaigns</li>
+                <li>Managed client data and supported daily operations</li>
+                <li>Performed in-depth market research to identify new business opportunities and improve campaign performance</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="tc-period">2024 — 2025</span>
+              <h3>Sales Executive</h3>
+              <h4>Nexoverse Solutions</h4>
+              <ul>
+                <li>Supported the sales and marketing team by managing administrative tasks and coordinating various projects</li>
+                <li>Conducted market research to identify potential clients, analyze trends, and contribute to marketing campaigns</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Education</span>
+          <h2>Education & <span class="gradient-text">Certifications</span></h2>
+        </div>
+        <div class="education-grid">
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="edu-icon blue">🎓</div>
+            <h3>Jamia Millia College</h3>
+            <div class="edu-degree">Bachelor's of Science</div>
+            <div class="edu-year">2024 — 2026</div>
+          </div>
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="edu-icon purple">🤖</div>
+            <h3>Bano Qabil Institute</h3>
+            <div class="edu-degree">Web Development with AI</div>
+            <div class="edu-year">5 Month Intensive Course</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Services</span>
+          <h2>My <span class="gradient-text">Expertise</span></h2>
+          <p>Combining traditional sales skills with modern technical capabilities</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="sc-icon">📊</div>
+            <h3>Lead Generation</h3>
+            <p>High-quality B2B leads scraped and verified for your sales team using modern tools.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="sc-icon">💼</div>
+            <h3>Sales Consulting</h3>
+            <p>Strategic advice to optimize your sales funnel and improve close rates.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="sc-icon">🤖</div>
+            <h3>AI Automation</h3>
+            <p>Custom AI agents to handle customer queries and automate internal processes.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="sc-icon">💬</div>
+            <h3>WhatsApp Chatbots</h3>
+            <p>Automated flows for restaurants, support, and lead qualification via WhatsApp.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="sc-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Modern, responsive websites built with the latest technologies and best practices.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="sc-icon">📱</div>
+            <h3>Social Media Growth</h3>
+            <p>LinkedIn and Instagram growth strategies using automation and content tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Design Gallery</span>
+          <h2>Logos & <span class="gradient-text">Website Designs</span></h2>
+          <p>Click on any design to see a full demo view</p>
+        </div>
+
+        <div class="portfolio-tabs" data-aos="fade-up">
+          <button class="tab-btn active" onclick="switchTab('logos', this)">
+            <span class="tab-icon">🎨</span> Logo Designs
+          </button>
+          <button class="tab-btn" onclick="switchTab('websites', this)">
+            <span class="tab-icon">🌐</span> Website Designs
+          </button>
+        </div>
+
+        <div id="logos-tab" class="portfolio-tab-content active">
+          <div class="portfolio-grid">
+            <div class="portfolio-card" data-aos="fade-up" onclick="openDemo('logo1')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/300x300/2563eb/ffffff?text=Logo+Design+1" alt="Logo Design 1">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Modern Tech Logo</h4>
+                <p>Minimalist design for tech startup</p>
+              </div>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100" onclick="openDemo('logo2')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/300x300/8b5cf6/ffffff?text=Logo+Design+2" alt="Logo Design 2">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Creative Agency Logo</h4>
+                <p>Bold and vibrant branding</p>
+              </div>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200" onclick="openDemo('logo3')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/300x300/ec4899/ffffff?text=Logo+Design+3" alt="Logo Design 3">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>E-commerce Logo</h4>
+                <p>Professional and trustworthy</p>
+              </div>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300" onclick="openDemo('logo4')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/300x300/10b981/ffffff?text=Logo+Design+4" alt="Logo Design 4">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Fitness Brand Logo</h4>
+                <p>Energy and dynamism</p>
+              </div>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400" onclick="openDemo('logo5')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/300x300/f59e0b/ffffff?text=Logo+Design+5" alt="Logo Design 5">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Coffee Shop Logo</h4>
+                <p>Warm and welcoming design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="websites-tab" class="portfolio-tab-content">
+          <div class="portfolio-grid">
+            <div class="portfolio-card" data-aos="fade-up" onclick="openDemo('website1')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/600x400/10b981/ffffff?text=Podium+Platform" alt="Podium Website">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Podium - Creative Portfolio</h4>
+                <p>Modern creative portfolio design</p>
+              </div>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100" onclick="openDemo('website2')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Nitec+Store" alt="Nitec Store">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Nitec - Product Store</h4>
+                <p>Modern e-commerce platform</p>
+              </div>
+            </div>
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200" onclick="openDemo('website3')">
+              <div class="portfolio-img">
+                <img src="https://placehold.co/600x400/ec4899/ffffff?text=Elvera+Fashion" alt="Elvera Fashion">
+                <div class="overlay"><span class="demo-btn">View Demo</span></div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Elvera - Fashion Store</h4>
+                <p>Dynamic fashion e-commerce</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Design Demos -->
+    <div id="demo-modal" class="demo-modal" onclick="closeDemo(event)">
+      <div class="demo-content" onclick="event.stopPropagation()">
+        <button class="close-btn" onclick="closeDemo(null)">&times;</button>
+        <img id="demo-image" src="" alt="Design Demo">
+        <div class="demo-info">
+          <h3 id="demo-title"></h3>
+          <p id="demo-desc"></p>
+          <a id="demo-visit-btn" href="#" target="_blank" rel="noopener noreferrer" class="demo-visit-btn" style="display: none;">
+            <i class="fas fa-external-link-alt"></i> Visit Website
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Skills</span>
+          <h2>Tech Stack & <span class="gradient-text">Competencies</span></h2>
+          <p>A blend of sales expertise and technical knowledge</p>
+        </div>
+        <div class="skills-container" data-aos="fade-up">
+          <span class="skill-tag">Sales Strategy</span>
+          <span class="skill-tag">Cold Calling</span>
+          <span class="skill-tag">Lead Generation</span>
+          <span class="skill-tag">AI Automation</span>
+          <span class="skill-tag">WhatsApp API</span>
+          <span class="skill-tag">CRM Management</span>
+          <span class="skill-tag">Data Scraping</span>
+          <span class="skill-tag">LinkedIn Outreach</span>
+          <span class="skill-tag">Copywriting</span>
+          <span class="skill-tag">Customer Success</span>
+          <span class="skill-tag">Email Marketing</span>
+          <span class="skill-tag">Project Management</span>
+          <span class="skill-tag">Web Development</span>
+          <span class="skill-tag">Market Research</span>
+          <span class="skill-tag">Client Relations</span>
+        </div>
+        <div class="skills-bottom" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-cat-card border-accent">
+            <h4> Soft Skills</h4>
+            <p>Negotiation, Leadership, Adaptability, Communication</p>
+          </div>
+          <div class="skill-cat-card border-accent" style="border-left-color: var(--purple);">
+            <h4> Hard Skills</h4>
+            <p>Python Basics, Make.com, Zapier, HTML/CSS/JS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Portfolio</span>
+          <h2>Featured <span class="gradient-text">Projects</span></h2>
+          <p>A selection of my recent work in automation and sales tech</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-img">
+              <img src="https://placehold.co/600x400/0a0a1a/3b82f6?text=WhatsApp+Bot" alt="WhatsApp Bot">
+              <div class="overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="pc-category">Automation</div>
+              <h3>Restaurant WhatsApp Bot</h3>
+              <div class="project-tags">
+                <span>WhatsApp API</span>
+                <span>Node.js</span>
+                <span>Menu Automation</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-img">
+              <img src="https://placehold.co/600x400/0a0a1a/8b5cf6?text=AI+Lead+Gen" alt="AI Lead Gen">
+              <div class="overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="pc-category">AI / Sales</div>
+              <h3>AI Lead Generation System</h3>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Scraping</span>
+                <span>Data Enrichment</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-img">
+              <img src="https://placehold.co/600x400/0a0a1a/ec4899?text=CRM+Dashboard" alt="CRM Dashboard">
+              <div class="overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="pc-category">Web App</div>
+              <h3>CRM Automation Dashboard</h3>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Firebase</span>
+                <span>API Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Testimonials</span>
+          <h2>Client <span class="gradient-text">Feedback</span></h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Khalil transformed our lead generation process. The automation system he built saved us 20 hours a week and doubled our conversion rate."</p>
+            <div class="client">
+              <div class="client-avatar">JD</div>
+              <div>
+                <div class="client-name">John Doe</div>
+                <div class="client-role">CEO, Tech Startup</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"His WhatsApp bot solution for our restaurant was a game changer. Customer orders increased by 40% within the first month of implementation."</p>
+            <div class="client">
+              <div class="client-avatar">FG</div>
+              <div>
+                <div class="client-name">Frank Gustawo</div>
+                <div class="client-role">Restaurant Owner</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Khalil's sales consulting helped us restructure our entire outreach process. Professional, dedicated, and results-driven."</p>
+            <div class="client">
+              <div class="client-avatar">JO</div>
+              <div>
+                <div class="client-name">Jason Oliver</div>
+                <div class="client-role">Marketing Director</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Contact</span>
+          <h2>Let's Work <span class="gradient-text">Together</span></h2>
+          <p>Ready to automate your workflow or boost your sales? Let's talk!</p>
+        </div>
+        <div class="contact-wrapper" data-aos="fade-up">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Get In Touch</h3>
+              <p>Feel free to reach out. Whether you have a question, a project idea, or just want to say hello — I'd love to hear from you.</p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="ci-icon blue">📞</div>
+                  <span>0317 3025339</span>
+                </div>
+                <div class="contact-item">
+                  <div class="ci-icon purple">✉️</div>
+                  <span>khalilahmed3811@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-socials">
+                <a href="https://www.linkedin.com/in/khalil-ahmed-3777363aa/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/itxkhalil333/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/923173025339" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:khalilahmed3811@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                Send Message
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m22 2-7 20-4-9-9-4Z" />
+                  <path d="M22 2 11 13" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp Widget -->
+  <div id="whatsapp-widget">
+    <a href="https://wa.me/923173025339?text=Hi%20Khalil%2C%20I%27m%20interested%20in%20your%20services!" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" title="Chat with us on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2026 Khalil Ahmed. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
