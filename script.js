@@ -232,50 +232,50 @@ const portfolioDemos = {
     logo1: {
         title: 'Modern Tech Logo',
         desc: 'Minimalist design for tech startup. Clean lines and modern aesthetics.',
-        image: 'https://placehold.co/600x400/2563eb/ffffff?text=Logo+Design+1',
+        image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=700&h=450&fit=crop&q=80',
         link: null
     },
     logo2: {
         title: 'Creative Agency Logo',
         desc: 'Bold and vibrant branding that stands out. Perfect for creative agencies.',
-        image: 'https://placehold.co/600x400/8b5cf6/ffffff?text=Logo+Design+2',
+        image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=700&h=450&fit=crop&q=80',
         link: null
     },
     logo3: {
         title: 'E-commerce Logo',
         desc: 'Professional and trustworthy design for online business.',
-        image: 'https://placehold.co/600x400/ec4899/ffffff?text=Logo+Design+3',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&h=450&fit=crop&q=80',
         link: null
     },
     logo4: {
         title: 'Fitness Brand Logo',
         desc: 'Energy and dynamism in every pixel. Perfect for fitness brands.',
-        image: 'https://placehold.co/600x400/10b981/ffffff?text=Logo+Design+4',
+        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&h=450&fit=crop&q=80',
         link: null
     },
     logo5: {
         title: 'Coffee Shop Logo',
         desc: 'Warm and welcoming design that captures the essence of coffee culture.',
-        image: 'https://placehold.co/600x400/f59e0b/ffffff?text=Logo+Design+5',
+        image: 'https://images.unsplash.com/photo-1501747315-124a0eaca060?w=700&h=450&fit=crop&q=80',
         link: null
     },
     website1: {
         title: 'Podium - Creative Portfolio',
         desc: 'Professional creative portfolio with minimalist design. Showcasing innovative design patterns and smooth user interactions with modern aesthetics.',
-        image: 'https://img.sanishtech.com/u/fd2401f963a4223ca82427121eeaf69a.png',
+        image: 'https://image.thum.io/get/width/700/crop/450/https://podium.global/',
         link: 'https://podium.global/'
     },
     website2: {
         title: 'Nitec - Product Store',
         desc: 'Modern e-commerce platform for tech products. Clean interface with professional product showcase and smooth shopping experience.',
-        image: 'https://img.sanishtech.com/u/fd2401f963a4223ca82427121eeaf69a.png',
-        link: 'https://podium.global/'
+        image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&h=450&fit=crop&q=80',
+        link: null
     },
     website3: {
         title: 'Elvera - Fashion Store',
         desc: 'Dynamic fashion e-commerce with bold branding. Trendy collection showcase with engaging user interface and modern design elements.',
-        image: 'https://img.sanishtech.com/u/fd2401f963a4223ca82427121eeaf69a.png',
-        link: 'https://podium.global/'
+        image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=700&h=450&fit=crop&q=80',
+        link: null
     }
 };
 
