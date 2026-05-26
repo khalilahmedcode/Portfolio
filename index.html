@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
   <!-- External Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" />
@@ -35,31 +34,33 @@
   <canvas id="particles-canvas"></canvas>
 
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#" class="logo">KHALIL<span>.DEV</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
-          🌙
-        </button>
-        <a href="#contact" class="btn-primary nav-cta">Let's Talk</a>
-        <button class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="#" class="logo">KHALIL<span>.DEV</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle Theme">
+            🌙
+          </button>
+          <a href="#contact" class="btn-primary nav-cta">Let's Talk</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- Mobile Menu Overlay -->
   <div class="mobile-menu" id="mobileMenu">
@@ -126,7 +127,7 @@
             <img src="https://i.im.ge/QM7r4eT/WhatsApp_Image_2026-05-02_at_4.51.36_AM.jpg" alt="Khalil Ahmed" class="profile-img" onerror="this.src='https://placehold.co/500x600/1a1a2e/3b82f6?text=Khalil+Ahmed'">
             <div class="image-overlay"></div>
             <div class="hero-image-info">
-              <h3>Khalil Ahmed</h3>
+              <h2>Khalil Ahmed</h2>
             </div>
           </div>
         </div>
@@ -323,51 +324,51 @@
           <div class="portfolio-grid">
             <div class="portfolio-card" data-aos="fade-up" onclick="openDemo('logo1')">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300&h=300&fit=crop&q=80" alt="Logo Design 1" onerror="this.src='https://placehold.co/300x300/2563eb/ffffff?text=Logo+Design+1'">
+                <img src="https://placehold.co/300x300/2563eb/ffffff?text=Logo+Design+1" alt="Logo Design 1" onerror="this.src='https://placehold.co/300x300/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>Modern Tech Logo</h4>
+                <h3>Modern Tech Logo</h3>
                 <p>Minimalist design for tech startup</p>
               </div>
             </div>
             <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100" onclick="openDemo('logo2')">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&h=300&fit=crop&q=80" alt="Logo Design 2" onerror="this.src='https://placehold.co/300x300/8b5cf6/ffffff?text=Logo+Design+2'">
+                <img src="https://placehold.co/300x300/8b5cf6/ffffff?text=Logo+Design+2" alt="Logo Design 2" onerror="this.src='https://placehold.co/300x300/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>Creative Agency Logo</h4>
+                <h3>Creative Agency Logo</h3>
                 <p>Bold and vibrant branding</p>
               </div>
             </div>
             <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200" onclick="openDemo('logo3')">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=300&h=300&fit=crop&q=80" alt="Logo Design 3" onerror="this.src='https://placehold.co/300x300/ec4899/ffffff?text=Logo+Design+3'">
+                <img src="https://placehold.co/300x300/ec4899/ffffff?text=Logo+Design+3" alt="Logo Design 3" onerror="this.src='https://placehold.co/300x300/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>E-commerce Logo</h4>
+                <h3>E-commerce Logo</h3>
                 <p>Professional and trustworthy</p>
               </div>
             </div>
             <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300" onclick="openDemo('logo4')">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=300&h=300&fit=crop&q=80" alt="Logo Design 4" onerror="this.src='https://placehold.co/300x300/10b981/ffffff?text=Logo+Design+4'">
+                <img src="https://placehold.co/300x300/10b981/ffffff?text=Logo+Design+4" alt="Logo Design 4" onerror="this.src='https://placehold.co/300x300/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>Fitness Brand Logo</h4>
+                <h3>Fitness Brand Logo</h3>
                 <p>Energy and dynamism</p>
               </div>
             </div>
             <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400" onclick="openDemo('logo5')">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1501747315-124a0eaca060?w=300&h=300&fit=crop&q=80" alt="Logo Design 5" onerror="this.src='https://placehold.co/300x300/f59e0b/ffffff?text=Logo+Design+5'">
+                <img src="https://placehold.co/300x300/f59e0b/ffffff?text=Logo+Design+5" alt="Logo Design 5" onerror="this.src='https://placehold.co/300x300/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>Coffee Shop Logo</h4>
+                <h3>Coffee Shop Logo</h3>
                 <p>Warm and welcoming design</p>
               </div>
             </div>
@@ -378,31 +379,31 @@
           <div class="portfolio-grid">
             <div class="portfolio-card" data-aos="fade-up" onclick="openDemo('website1')">
               <div class="portfolio-img">
-                <img src="https://image.thum.io/get/width/600/crop/400/https://podium.global/" alt="Podium Website" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&q=80'">
+                <img src="https://placehold.co/600x400/10b981/ffffff?text=Podium+Platform" alt="Podium Website" onerror="this.src='https://placehold.co/600x400/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>Podium - Creative Portfolio</h4>
+                <h3>Podium - Creative Portfolio</h3>
                 <p>Modern creative portfolio design</p>
               </div>
             </div>
             <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100" onclick="openDemo('website2')">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop&q=80" alt="Nitec Store" onerror="this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=Nitec+Store'">
+                <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Nitec+Store" alt="Nitec Store" onerror="this.src='https://placehold.co/600x400/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>Nitec - Product Store</h4>
+                <h3>Nitec - Product Store</h3>
                 <p>Modern e-commerce platform</p>
               </div>
             </div>
             <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200" onclick="openDemo('website3')">
               <div class="portfolio-img">
-                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&q=80" alt="Elvera Fashion" onerror="this.src='https://placehold.co/600x400/ec4899/ffffff?text=Elvera+Fashion'">
+                <img src="https://placehold.co/600x400/ec4899/ffffff?text=Elvera+Fashion" alt="Elvera Fashion" onerror="this.src='https://placehold.co/600x400/1a1a2e/ffffff?text=Image+Not+Found'">
                 <div class="overlay"><span class="demo-btn">View Demo</span></div>
               </div>
               <div class="portfolio-info">
-                <h4>Elvera - Fashion Store</h4>
+                <h3>Elvera - Fashion Store</h3>
                 <p>Dynamic fashion e-commerce</p>
               </div>
             </div>
@@ -412,13 +413,13 @@
     </section>
 
     <!-- Modal for Design Demos -->
-    <div id="demo-modal" class="demo-modal" onclick="closeDemo(event)">
+    <div id="demo-modal" class="demo-modal" aria-hidden="true" onclick="closeDemo(event)">
       <div class="demo-content" onclick="event.stopPropagation()">
-        <button class="close-btn" onclick="closeDemo(null)">&times;</button>
-        <img id="demo-image" src="" alt="Design Demo">
+        <button class="close-btn" aria-label="Close Demo" onclick="closeDemo(null)">&times;</button>
+        <img id="demo-image" src="https://placehold.co/600x400/1a1a2e/ffffff?text=Loading..." alt="Design Demo" onerror="this.src='https://placehold.co/600x400/1a1a2e/ffffff?text=Image+Not+Found'">
         <div class="demo-info">
-          <h3 id="demo-title"></h3>
-          <p id="demo-desc"></p>
+          <h3 id="demo-title">Design Preview</h3>
+          <p id="demo-desc">Loading description...</p>
           <a id="demo-visit-btn" href="#" target="_blank" rel="noopener noreferrer" class="demo-visit-btn" style="display: none;">
             <i class="fas fa-external-link-alt"></i> Visit Website
           </a>
@@ -453,11 +454,11 @@
         </div>
         <div class="skills-bottom" data-aos="fade-up" data-aos-delay="200">
           <div class="skill-cat-card border-accent">
-            <h4> Soft Skills</h4>
+            <h3> Soft Skills</h3>
             <p>Negotiation, Leadership, Adaptability, Communication</p>
           </div>
           <div class="skill-cat-card border-accent" style="border-left-color: var(--purple);">
-            <h4> Hard Skills</h4>
+            <h3> Hard Skills</h3>
             <p>Python Basics, Make.com, Zapier, HTML/CSS/JS</p>
           </div>
         </div>
@@ -475,7 +476,7 @@
         <div class="projects-grid">
           <div class="project-card" data-aos="fade-up" data-aos-delay="100">
             <div class="project-img">
-              <img src="https://placehold.co/600x400/0a0a1a/3b82f6?text=WhatsApp+Bot" alt="WhatsApp Bot">
+              <img src="https://placehold.co/600x400/0a0a1a/3b82f6?text=WhatsApp+Bot" alt="WhatsApp Bot" onerror="this.src='https://placehold.co/600x400/1a1a2e/ffffff?text=Image+Not+Found'">
               <div class="overlay"></div>
             </div>
             <div class="project-body">
@@ -490,7 +491,7 @@
           </div>
           <div class="project-card" data-aos="fade-up" data-aos-delay="200">
             <div class="project-img">
-              <img src="https://placehold.co/600x400/0a0a1a/8b5cf6?text=AI+Lead+Gen" alt="AI Lead Gen">
+              <img src="https://placehold.co/600x400/0a0a1a/8b5cf6?text=AI+Lead+Gen" alt="AI Lead Gen" onerror="this.src='https://placehold.co/600x400/1a1a2e/ffffff?text=Image+Not+Found'">
               <div class="overlay"></div>
             </div>
             <div class="project-body">
@@ -505,7 +506,7 @@
           </div>
           <div class="project-card" data-aos="fade-up" data-aos-delay="300">
             <div class="project-img">
-              <img src="https://placehold.co/600x400/0a0a1a/ec4899?text=CRM+Dashboard" alt="CRM Dashboard">
+              <img src="https://placehold.co/600x400/0a0a1a/ec4899?text=CRM+Dashboard" alt="CRM Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/ffffff?text=Image+Not+Found'">
               <div class="overlay"></div>
             </div>
             <div class="project-body">
@@ -591,24 +592,24 @@
                 </div>
               </div>
               <div class="contact-socials">
-                <a href="https://www.linkedin.com/in/khalil-ahmed-3777363aa/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/itxkhalil333/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/923173025339" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="mailto:khalilahmed3811@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/khalil-ahmed-3777363aa/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/itxkhalil333/" target="_blank" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/923173025339" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:khalilahmed3811@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
               </div>
             </div>
             <form class="contact-form" onsubmit="handleSubmit(event)">
               <div class="form-group">
-                <label>Your Name</label>
-                <input type="text" placeholder="John Doe" required>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
               </div>
               <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="john@example.com" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@example.com" required>
               </div>
               <div class="form-group">
-                <label>Message</label>
-                <textarea placeholder="Tell me about your project..." required></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell me about your project..." required></textarea>
               </div>
               <button type="submit" class="form-submit">
                 Send Message
@@ -626,13 +627,13 @@
 
   <!-- WhatsApp Widget -->
   <div id="whatsapp-widget">
-    <a href="https://wa.me/923173025339?text=Hi%20Khalil%2C%20I%27m%20interested%20in%20your%20services!" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" title="Chat with us on WhatsApp">
+    <a href="https://wa.me/923173025339?text=Hi%20Khalil%2C%20I%27m%20interested%20in%20your%20services!" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" title="Chat with us on WhatsApp" aria-label="Chat with us on WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
 
   <!-- Footer -->
-<footer>
+  <footer>
     <div class="container">
       <div class="footer-content">
         <p>© 2026 Khalil Ahmed. All rights reserved.</p>
